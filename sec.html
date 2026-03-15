@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miracle Lounge Laser Beauty Saloon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f0f14;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+position:fixed;
+width:100%;
+z-index:999;
+}
+
+nav h1{
+color:#ff4fa3;
+font-size:24px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:14px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff4fa3;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 10%;
+background:linear-gradient(135deg,#ff4fa3,#7a5cff);
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:20px;
+animation:fade 2s;
+}
+
+.hero p{
+font-size:18px;
+opacity:.9;
+}
+
+.hero button{
+margin-top:30px;
+padding:14px 35px;
+border:none;
+border-radius:30px;
+background:white;
+color:#7a5cff;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.hero button:hover{
+transform:scale(1.1);
+}
+
+/* SERVICES */
+
+.services{
+padding:100px 10%;
+text-align:center;
+}
+
+.services h2{
+font-size:35px;
+margin-bottom:50px;
+color:#ff4fa3;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1b1b25;
+padding:35px;
+border-radius:15px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#262636;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#ff4fa3;
+}
+
+/* ABOUT */
+
+.about{
+padding:100px 10%;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:50px;
+}
+
+.about img{
+width:100%;
+max-width:450px;
+border-radius:20px;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text h2{
+color:#ff4fa3;
+margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+padding:30px;
+text-align:center;
+background:#111;
+margin-top:60px;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Miracle Lounge</h1>
+
+<div>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#">Contact</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h2>Miracle Lounge Laser Beauty Saloon</h2>
+
+<p>Advanced laser beauty treatments with modern technology for flawless skin.</p>
+
+<button>Book Appointment</button>
+
+</div>
+
+</section>
+
+<section class="services" id="services">
+
+<h2>Our Premium Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Whole Body Hair Removal</h3>
+<p>Permanent laser hair removal treatment.</p>
+</div>
+
+<div class="card">
+<h3>Tattoo Removal</h3>
+<p>Advanced laser tattoo removal technology.</p>
+</div>
+
+<div class="card">
+<h3>Freckle Removal</h3>
+<p>Clear skin treatment for freckles.</p>
+</div>
+
+<div class="card">
+<h3>Mole Removal</h3>
+<p>Safe and professional mole removal.</p>
+</div>
+
+<div class="card">
+<h3>Eyebrow Embroidery Removal</h3>
+<p>Laser correction for eyebrow tattoos.</p>
+</div>
+
+<div class="card">
+<h3>Black Face Doll Treatment</h3>
+<p>Skin rejuvenation and glowing facial.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+
+<div class="about-text">
+
+<h2>About Our Salon</h2>
+
+<p>
+
+Miracle Lounge Laser Beauty Saloon provides advanced laser treatments using modern technology and expert care. Our mission is to give every client beautiful, healthy and glowing skin.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Miracle Lounge Laser Beauty Saloon</p>
+
+</footer>
+
+</body>
+</html>
